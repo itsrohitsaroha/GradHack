@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">login_screen</string>
+    <string name="title_activity_login_success">LoginSuccessActivity</string>
+    <string name="title_activity_credit_card_home">CreditCardHome</string>
+    <string name="title_activity_card_detail">CardDetailActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_next_visit">NextVisitActivity</string>
+</resources>

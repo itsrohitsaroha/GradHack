@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextVisitActivity">
+
+
+    <ImageView
+        android:id="@+id/next_visit"
+        android:layout_width="337dp"
+        android:layout_height="529dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/next_visit" />
+
+    <ImageView
+        android:id="@+id/shake2"
+        android:layout_width="362dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="548dp"
+        android:layout_marginBottom="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/next_visit"
+        app:srcCompat="@drawable/shake" />
+
+    <Button
+        android:id="@+id/confirm_appointment"
+        android:layout_width="319dp"
+        android:layout_height="466dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/next_visit"
+        app:layout_constraintEnd_toEndOf="@+id/next_visit"
+        app:layout_constraintStart_toStartOf="@+id/next_visit"
+        app:layout_constraintTop_toTopOf="@+id/next_visit"
+        app:layout_constraintVertical_bias="0.714" />
+</androidx.constraintlayout.widget.ConstraintLayout>

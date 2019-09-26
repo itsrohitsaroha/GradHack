@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutstandingRequestsActivity">
+
+    <ImageView
+        android:id="@+id/outstanding_requests_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outstanding_requests_title" />
+
+    <ImageView
+        android:id="@+id/outstanding_summary_frame"
+        android:layout_width="369dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outstanding_requests_title"
+        app:srcCompat="@drawable/request_summary_frame" />
+
+    <ImageView
+        android:id="@+id/next_visit_frame"
+        android:layout_width="321dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/outstanding_request_carousel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outstanding_summary_frame"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/next_visit_frame" />
+
+    <ImageView
+        android:id="@+id/outstanding_request_carousel"
+        android:layout_width="359dp"
+        android:layout_height="259dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_visit_frame"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/outstanding_request_carousel" />
+
+    <TextView
+        android:id="@+id/request_counter"
+        android:layout_width="71dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="37dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="50.0dip"
+        app:layout_constraintBottom_toBottomOf="@+id/outstanding_summary_frame"
+        app:layout_constraintStart_toStartOf="@+id/outstanding_summary_frame"
+        app:layout_constraintTop_toTopOf="@+id/outstanding_summary_frame" />
+
+    <TextView
+        android:id="@+id/branch_appointment"
+        android:layout_width="173dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20.0dip"
+        app:layout_constraintEnd_toEndOf="@+id/next_visit_frame"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="@+id/next_visit_frame"
+        app:layout_constraintTop_toTopOf="@+id/next_visit_frame" />
+
+    <TextView
+        android:id="@+id/new_requests"
+        android:layout_width="177dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20.0dip"
+        app:layout_constraintEnd_toEndOf="@+id/outstanding_summary_frame"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/request_counter"
+        app:layout_constraintTop_toTopOf="@+id/outstanding_summary_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

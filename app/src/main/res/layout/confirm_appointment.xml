@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmAppointmentActivity">
+
+
+    <ImageView
+        android:id="@+id/shake3"
+        android:layout_width="362dp"
+        android:layout_height="73dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_confirmation"
+        app:srcCompat="@drawable/shake" />
+
+    <ImageView
+        android:id="@+id/appointment_confirmation"
+        android:layout_width="357dp"
+        android:layout_height="540dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/appointment_summary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="338dp"
+        android:layout_height="477dp"
+        android:layout_marginTop="33dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/appointment_confirmation"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/appointment_confirmation"
+        app:layout_constraintTop_toTopOf="@+id/appointment_confirmation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

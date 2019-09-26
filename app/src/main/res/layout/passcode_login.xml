@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/passw_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Passcode"
+        android:textSize="50.0dip"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/login_form"
+        android:layout_width="348dp"
+        android:layout_height="451dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passw_prompt"
+        app:srcCompat="@drawable/passcode_login_form" />
+
+    <EditText
+        android:id="@+id/passw_field2"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+
+        android:maxLength="1"
+        android:nextFocusForward="@+id/passw_field3"
+        app:layout_constraintStart_toStartOf="@+id/login_form"
+        app:layout_constraintTop_toTopOf="@+id/login_form" />
+
+    <EditText
+        android:id="@+id/passw_field4"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginLeft="268dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        app:layout_constraintStart_toStartOf="@+id/login_form"
+        app:layout_constraintTop_toTopOf="@+id/login_form" />
+
+    <EditText
+        android:id="@+id/passw_field1"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="244dp"
+        android:ems="1"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/passw_field2"
+        app:layout_constraintStart_toStartOf="@+id/login_form"
+        app:layout_constraintTop_toTopOf="@+id/login_form" />
+
+    <EditText
+        android:id="@+id/passw_field3"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/passw_field4"
+        app:layout_constraintStart_toStartOf="@+id/login_form"
+        app:layout_constraintTop_toTopOf="@+id/login_form" />
+
+    <ImageView
+        android:id="@+id/shake_icon"
+        android:layout_width="378dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_form"
+        app:layout_constraintEnd_toEndOf="@+id/login_form"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/login_form"
+        app:layout_constraintTop_toTopOf="@+id/login_form"
+        app:layout_constraintVertical_bias="0.802"
+        app:srcCompat="@drawable/shake" />
+
+    <Button
+        android:id="@+id/submit_passw"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="5dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="@+id/login_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shake_icon"
+        app:layout_constraintVertical_bias="0.875"
+        tools:text="LOGIN" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
