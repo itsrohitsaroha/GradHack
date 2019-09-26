@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class OutstandingRequestsActivity extends AppCompatActivity {
 
-    int tot_requests = 0;
+    static int tot_requests = 0;
 
     String next_appointment = "NO UPCOMING" + "\n" + "REQUESTS";
     String appointment_list = "NO UPCOMING" + "\n" + "APPOINTMENTS";

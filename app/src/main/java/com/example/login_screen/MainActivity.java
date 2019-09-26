@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private VoiceItAPI2 myVoiceIt2 = new VoiceItAPI2("key_ed65a6ff5c3c40c3bf4a4721263f3048",
             "tok_0512077528884659b793ec723404b2bb");
 
-    public String userId = "usr_97fac95e9d0c4213a537e61607de7267";
+    public String userId = "usr_3b3cce9192d740feb2e9b877f750888a";
     private String phrase = "never forget tomorrow is a new day";
     private String contentLanguage = "en-US";
     private boolean doLivenessCheck = false;
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     //TextView displayText;
     TextView createDeleteUserButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +61,16 @@ public class MainActivity extends AppCompatActivity {
         prefEditor = sharedPref.edit();
         phrase = sharedPref.getString("phrase", phrase);
         //displayText = findViewById(R.id.displayText);
-
+        Button bt=(Button)findViewById(R.id.createDeleteUserButton);
+        bt.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mIntent = new Intent(
+                        MainActivity.this,
+                        PasscodeActivity.class);
+                startActivity(mIntent);
+            }
+        });
 
         /*final Button voiceVerificationButton = (Button) findViewById(R.id.voiceVerificationButton);
         //voice_login_button.setVisibility(View.GONE);
@@ -77,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
         //Intent shake = new Intent(MainActivity.this, ShakeListenerTestActivity.class);
         //startActivity(shake);
     }
+
+
     private void enableButtons(boolean enabled) {
         findViewById(R.id.voiceEnrollmentButton).setEnabled(enabled);
         findViewById(R.id.voiceVerificationButton).setEnabled(enabled);
