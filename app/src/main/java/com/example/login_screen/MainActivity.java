@@ -38,10 +38,10 @@ import com.voiceit.voiceit2.VoiceItAPI2;
 
 public class MainActivity extends AppCompatActivity {
 
-    private VoiceItAPI2 myVoiceIt2 = new VoiceItAPI2("key_ed65a6ff5c3c40c3bf4a4721263f3048",
-            "tok_0512077528884659b793ec723404b2bb");
+    private VoiceItAPI2 myVoiceIt2 = new VoiceItAPI2("key_d012ec0dc2b44e65a8ab9318350a5d3b",
+            "tok_7d2aa2c81d4d4012b731ef33612a9ccb");
 
-    public String userId = "usr_3b3cce9192d740feb2e9b877f750888a";
+    public String userId = "usr_125554efbf5d41e2818fe57975f8a273";
     private String phrase = "never forget tomorrow is a new day";
     private String contentLanguage = "en-US";
     private boolean doLivenessCheck = false;
